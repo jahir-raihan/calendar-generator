@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -10,33 +12,94 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: #1abc9c;
+header {
+  background: #343a40 !important;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 95%;
+  margin: auto;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-right ul {
+  list-style: none;
+  display: flex;
+}
+header nav .nav-right ul li {
+  margin-left: 1.5em;
+  color: white;
+}
+header nav .nav-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav .nav-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-selected-year-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+  width: 95%;
+}
+.search-selected-year-download .search {
+  width: 50%;
+}
+.search-selected-year-download .search input::-webkit-outer-spin-button,
+.search-selected-year-download .search input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.search-selected-year-download .search input[type=number] {
+  -moz-appearance: textfield;
+}
+.search-selected-year-download .search input {
+  width: 70%;
+  height: 35px;
+  border-radius: 4px;
+  padding-left: 1em;
+  border: 0.5px solid #d9d9d9;
+  outline-color: #d9d9d9;
+  opacity: 0.6;
+}
+.search-selected-year-download .search input:focus {
+  opacity: 1;
+}
+.search-selected-year-download .selected-year {
   text-align: center;
 }
-
-.month ul {
-  margin: 0;
-  padding: 0;
+.search-selected-year-download .selected-year p {
+  font-size: 22px;
+}
+.search-selected-year-download .download {
+  width: 120px;
+  padding: 0.5em 1em;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
 }
 
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.calender-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 95%;
+  margin: auto;
+  background: #fafafa;
+  border-radius: 4px;
+  margin: 2em 0;
 }
 
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
-  float: right;
-  padding-top: 10px;
+.month {
+  min-width: 300px;
 }
 
 .weekdays {
@@ -76,12 +139,14 @@ body {
 
 /* Add media queries for smaller screens */
 @media screen and (max-width: 720px) {
-  .weekdays li, .days li {
+  .weekdays li,
+  .days li {
     width: 13.1%;
   }
 }
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {
+  .weekdays li,
+  .days li {
     width: 12.5%;
   }
   .days li .active {
@@ -89,7 +154,8 @@ body {
   }
 }
 @media screen and (max-width: 290px) {
-  .weekdays li, .days li {
+  .weekdays li,
+  .days li {
     width: 12.2%;
   }
 }/*# sourceMappingURL=index.css.map */

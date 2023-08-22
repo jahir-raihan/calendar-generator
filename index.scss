@@ -1,37 +1,125 @@
-
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: #1abc9c;
-  text-align: center;
-}
-
-.month ul {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
 }
 
-.month .prev {
-  float: left;
-  padding-top: 10px;
+// header - navigation
+
+header {
+  background: #343a40!important;
+  
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  nav {
+    width: 95%;
+    margin: auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    .nav-right {
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          margin-left: 1.5em;
+          color: white;
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.month .next {
-  float: right;
-  padding-top: 10px;
+.search-selected-year-download{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:2em auto;
+  width:95%;
+
+  .search{
+    width:50%;
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    input{
+      width:70%;
+      height:35px;
+      border-radius: 4px;
+      padding-left:1em;
+      border:.5px solid #d9d9d9;
+      outline-color:#d9d9d9;
+      opacity: .6;
+      &:focus{
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .selected-year{
+    text-align: center;
+
+    p{
+      font-size:22px;
+    }
+  }
+
+  .download{
+    width:120px;
+    padding:.5em 1em;
+    height:35px;
+    font-size:15px;
+    border:none;
+    border-radius: 4px;
+
+  }
 }
 
+
+
+.calender-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 95%;
+  margin: auto;
+  background: #fafafa;
+  border-radius: 4px;
+  margin: 2em 0;
+}
+
+.month {
+  min-width: 300px;
+}
 .weekdays {
   margin: 0;
   padding: 10px 0;
@@ -57,26 +145,37 @@ body {font-family: Verdana, sans-serif;}
   width: 13.6%;
   text-align: center;
   margin-bottom: 5px;
-  font-size:12px;
+  font-size: 12px;
   color: #777;
 }
 
 .days li .active {
   padding: 5px;
   background: #1abc9c;
-  color: white !important
+  color: white !important;
 }
 
 /* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
 }
 
 @media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
 }
