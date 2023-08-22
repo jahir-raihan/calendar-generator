@@ -16,7 +16,10 @@ body {
 
 header {
   background: #343a40 !important;
+  position: sticky;
+  top: 0;
   height: 80px;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,9 +73,10 @@ header nav .nav-right ul li a:hover {
   padding-left: 1em;
   border: 0.5px solid #d9d9d9;
   outline-color: #d9d9d9;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 .search-selected-year-download .search input:focus {
+  outline-color: #494f55;
   opacity: 1;
 }
 .search-selected-year-download .selected-year {
@@ -94,7 +98,7 @@ header nav .nav-right ul li a:hover {
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
   width: 95%;
-  gap: 1.25%;
+  gap: 1.33%;
   border-radius: 4px;
   margin: 2em auto;
 }
