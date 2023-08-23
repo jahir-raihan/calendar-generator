@@ -73,6 +73,8 @@ header nav .nav-right ul li a:hover {
 }
 .search-selected-year-download .search input[type=number] {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 .search-selected-year-download .search input {
   width: 70%;
@@ -164,12 +166,25 @@ header nav .nav-right ul li a:hover {
 }
 .month .week-days ul li:hover {
   color: white;
-  background: #2e85ff;
+  background: #494f55;
 }
 
 .active {
   color: white !important;
-  background: #2e85ff;
+  background: #343a40;
+}
+
+.empty-blocks:hover {
+  all: unset !important;
+}
+
+.blocks:hover {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+.year-box {
+  outline: none;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -189,6 +204,4 @@ header nav .nav-right ul li a:hover {
     grid-template-columns: 100%;
     gap: 1em;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
