@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background: #494f55;
+  padding-bottom: 2em;
+}
+
+header {
+  background: #343a40 !important;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 95%;
+  margin: auto;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-right ul {
+  list-style: none;
+  display: flex;
+}
+header nav .nav-right ul li {
+  margin-left: 1.5em;
+  color: white;
+}
+header nav .nav-right ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav .nav-right ul li a:hover {
+  text-decoration: underline;
+}
+
+.search-selected-year-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+  width: 95%;
+}
+.search-selected-year-download .search {
+  width: 150px;
+}
+.search-selected-year-download .search input::-webkit-outer-spin-button,
+.search-selected-year-download .search input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.search-selected-year-download .search input[type=number] {
+  -moz-appearance: textfield;
+}
+.search-selected-year-download .search input {
+  width: 70%;
+  height: 35px;
+  border-radius: 4px;
+  padding-left: 1em;
+  border: 0.5px solid #d9d9d9;
+  outline-color: #d9d9d9;
+  opacity: 0.7;
+}
+.search-selected-year-download .search input:focus {
+  outline-color: #494f55;
+  opacity: 1;
+}
+.search-selected-year-download .selected-year {
+  text-align: center;
+}
+.search-selected-year-download .selected-year p {
+  font-size: 22px;
+}
+.search-selected-year-download .download {
+  width: 120px;
+  padding: 0.5em 1em;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.calender-container {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  width: 95%;
+  gap: 1.33%;
+  border-radius: 4px;
+  margin: 2em auto;
+}
+
+.month {
+  min-width: 300px;
+}
+
+.month {
+  width: 100%;
+}
+.month .year-month-name {
+  margin: 0.5em 0;
+  font-weight: 500;
+  opacity: 0.7;
+  width: 100%;
+  color: white;
+  font-size: 13px;
+}
+.month .week-day-names {
+  background: #343a40;
+  padding: 1em;
+  border-radius: 4px 4px 0 0;
+}
+.month .week-day-names ul {
+  display: grid;
+  grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
+}
+.month .week-day-names ul li {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+.month .days {
+  background: #eee;
+  border-radius: 0 0 4px 4px;
+  padding: 10px 0;
+  height: 285px;
+}
+.month .week-days {
+  padding: 0.5em 1em;
+}
+.month .week-days ul {
+  display: grid;
+  grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
+}
+.month .week-days ul li {
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.month .week-days ul li:hover {
+  color: white;
+  background: #343a40;
+}
+
+.active {
+  color: white !important;
+  background: #343a40;
+}
+
+@media only screen and (max-width: 1300px) {
+  .calender-container {
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .calender-container {
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .calender-container {
+    grid-template-columns: 100%;
+    gap: 1em;
+  }
+}/*# sourceMappingURL=index.css.map */
