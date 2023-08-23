@@ -103,14 +103,14 @@ header nav .nav-right ul li a:hover {
   margin: 2em auto;
 }
 
-.month-new {
+.month {
   min-width: 300px;
 }
 
-.month-new {
+.month {
   width: 100%;
 }
-.month-new .year-month-name {
+.month .year-month-name {
   margin: 0.5em 0;
   font-weight: 500;
   opacity: 0.7;
@@ -118,33 +118,34 @@ header nav .nav-right ul li a:hover {
   color: white;
   font-size: 13px;
 }
-.month-new .week-day-names {
+.month .week-day-names {
   background: #276f6f;
   padding: 1em;
   border-radius: 4px 4px 0 0;
 }
-.month-new .week-day-names ul {
+.month .week-day-names ul {
   display: grid;
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
-.month-new .week-day-names ul li {
+.month .week-day-names ul li {
   width: 10%;
   color: #ffffff;
   font-size: 14px;
 }
-.month-new .days {
+.month .days {
   background: #eee;
   border-radius: 0 0 4px 4px;
   padding: 10px 0;
+  height: 285px;
 }
-.month-new .week-days {
+.month .week-days {
   padding: 0.5em 1em;
 }
-.month-new .week-days ul {
+.month .week-days ul {
   display: grid;
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
-.month-new .week-days ul li {
+.month .week-days ul li {
   color: #777;
   width: 10%;
   font-size: 13px;
@@ -155,7 +156,7 @@ header nav .nav-right ul li a:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-.month-new .week-days ul li:hover {
+.month .week-days ul li:hover {
   color: white;
   background: #343a40;
   width: 20px;

@@ -124,11 +124,11 @@ header {
   margin: 2em auto;
 }
 
-.month-new {
+.month {
   min-width: 300px;
 }
 
-.month-new {
+.month {
   width: 100%;
 
   .year-month-name {
@@ -159,6 +159,7 @@ header {
     background: #eee;
     border-radius: 0 0 4px 4px;
     padding: 10px 0;
+    height:285px;
   }
 
   .week-days {
