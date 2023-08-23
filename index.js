@@ -94,7 +94,7 @@ class Calendar {
                     current_loop_date.getMonth() === this.current_date.getMonth() &&
                     this.current_date.getFullYear() == current_loop_date.getFullYear()) {
 
-                    week_template += `<li class="active"> ${day}</li>`
+                    week_template += `<li class="nonEmpty_days"> ${day}</li>`
 
                 } else {
                     week_template += `<li class="nonEmpty_days">${day}</li>`
