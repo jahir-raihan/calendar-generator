@@ -32,6 +32,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav .site-logo-link {
+  text-decoration: none;
+}
 header nav .site-logo {
   font-size: 24px;
   font-weight: 500;
@@ -186,4 +189,6 @@ header nav .nav-right ul li a:hover {
     grid-template-columns: 100%;
     gap: 1em;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
