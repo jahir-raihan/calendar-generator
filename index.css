@@ -119,7 +119,7 @@ header nav .nav-right ul li a:hover {
   font-size: 13px;
 }
 .month .week-day-names {
-  background: #276f6f;
+  background: #343a40;
   padding: 1em;
   border-radius: 4px 4px 0 0;
 }
@@ -157,13 +157,11 @@ header nav .nav-right ul li a:hover {
 .month .week-days ul li:hover {
   color: white;
   background: #343a40;
-  width: 20px;
 }
 
 .active {
   color: white !important;
   background: #343a40;
-  width: 20px;
 }
 
 @media only screen and (max-width: 1300px) {

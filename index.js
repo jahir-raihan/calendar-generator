@@ -67,7 +67,16 @@ function render_calendar(year){
 
                     }
                 }
-                week_template += `<li>${day}</li>`
+                if (current_loop_date.getDate() == current_date.getDate() &&
+                    current_loop_date.getMonth() === current_date.getMonth() &&
+                    current_date.getFullYear() == current_loop_date.getFullYear()) {
+
+                    week_template += `<li class="active"> ${day}</li>`
+
+                } else {
+                    week_template += `<li>${day}</li>`
+                }
+                
                 week_counter += 1
                 
             }
