@@ -59,7 +59,7 @@ class Calendar {
                 if(first_week_itr && current_loop_date.getDay() > 1){
                     
                     for (var tmp = 0; tmp < current_loop_date.getDay() - 1; tmp++){
-                        week_template += `<li></li>`;
+                        week_template += `<li class="empty-days"></li>`;
                         week_counter += 1;
                         
                     }
@@ -71,7 +71,7 @@ class Calendar {
                     // except Sunday with empty <li> elements.
                 
                     for (var tmp = 0; tmp < 6; tmp++){
-                        week_template += `<li></li>`
+                        week_template += `<li class="empty-days"></li>`
                         week_counter += 1
                     }
 
@@ -97,7 +97,7 @@ class Calendar {
                     week_template += `<li class="active"> ${day}</li>`
 
                 } else {
-                    week_template += `<li>${day}</li>`
+                    week_template += `<li class="nonEmpty_days">${day}</li>`
                 }
                 
                 week_counter += 1
