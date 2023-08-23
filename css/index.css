@@ -32,6 +32,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav .site-logo {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
 header nav .nav-right ul {
   list-style: none;
   display: flex;
@@ -156,12 +161,12 @@ header nav .nav-right ul li a:hover {
 }
 .month .week-days ul li:hover {
   color: white;
-  background: #343a40;
+  background: #2e85ff;
 }
 
 .active {
   color: white !important;
-  background: #343a40;
+  background: #2e85ff;
 }
 
 @media only screen and (max-width: 1300px) {
