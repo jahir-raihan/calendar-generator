@@ -149,7 +149,7 @@ header {
       display: grid;
       grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
       li {
-        width: 10%;
+        text-align: center;
         color: #ffffff;
         font-size: 14px;
       }
@@ -170,12 +170,9 @@ header {
 
       li {
         color: #777;
-        width: 10%;
         font-size: 13px;
-
+        text-align: center;
         margin-bottom: 0.5em;
-
-        width: fit-content !important;
         padding: 0.3em;
         border-radius: 4px;
 

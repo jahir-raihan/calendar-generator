@@ -128,7 +128,7 @@ header nav .nav-right ul li a:hover {
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
 .month .week-day-names ul li {
-  width: 10%;
+  text-align: center;
   color: #ffffff;
   font-size: 14px;
 }
@@ -147,11 +147,9 @@ header nav .nav-right ul li a:hover {
 }
 .month .week-days ul li {
   color: #777;
-  width: 10%;
   font-size: 13px;
+  text-align: center;
   margin-bottom: 0.5em;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
   padding: 0.3em;
   border-radius: 4px;
   cursor: pointer;
