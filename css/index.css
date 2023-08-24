@@ -166,25 +166,16 @@ header nav .nav-right ul li a:hover {
 }
 .month .week-days ul li:hover {
   color: white;
-  background: #494f55;
+  background: #2e85ff;
 }
 
 .active {
   color: white !important;
-  background: #343a40;
+  background: #2e85ff;
 }
 
 .empty-blocks:hover {
   all: unset !important;
-}
-
-.blocks:hover {
-  background-color: #343a40 !important;
-  color: white !important;
-}
-
-.year-box {
-  outline: none;
 }
 
 @media only screen and (max-width: 1300px) {
