@@ -73,6 +73,8 @@ header nav .nav-right ul li a:hover {
 }
 .search-selected-year-download .search input[type=number] {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 .search-selected-year-download .search input {
   width: 70%;
@@ -172,6 +174,10 @@ header nav .nav-right ul li a:hover {
   background: #2e85ff;
 }
 
+.empty-blocks:hover {
+  all: unset !important;
+}
+
 @media only screen and (max-width: 1300px) {
   .calender-container {
     grid-template-columns: 32% 32% 32%;
@@ -189,6 +195,4 @@ header nav .nav-right ul li a:hover {
     grid-template-columns: 100%;
     gap: 1em;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
