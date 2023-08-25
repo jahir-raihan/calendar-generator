@@ -17,4 +17,6 @@ If you're new to contribution, Here's the guide.
 
 > - **HTML** and **SCSS** files are formatted using prettier.
 > - Do not format the **Javascript** files, stay up to the current format using **tab** for **indentation**.
+> - Do not use **`PX`** for any property value, except custom font size. I will add global variable for font sizes.
+> - Always wrap text inside text tags Eg: `p` `text` or `small` etc.
 #### This Project is only for educational purpose.
