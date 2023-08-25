@@ -14,9 +14,9 @@ If you're new to contribution, Here's the guide.
 ### Note
 
 > - <b style="color:#FF9966;">Do not edit `RAW CSS` files for styling, edit `SCSS` files instead.</b>
-> - <b style="color:#FF9966;">To compile the .scss file you need to install the sass command line: ``npm i -g sass`` and run the command ``sass css/index.scss css/index.css``.</b>
 
 > - **HTML** and **SCSS** files are formatted using prettier.
+> - To see the changes you made in the ``.scss`` file you must **compile it**. To do this, install the [Sass Watcher Extension](https://marketplace.visualstudio.com/items?itemName=codelios.dartsass).
 > - Do not format the **Javascript** files, stay up to the current format using **tab** for **indentation**.
 > - Do not use **`PX`** for any property value, except custom font size. I will add global variable for font sizes.
 > - Always wrap text inside text tags Eg: `p` `text` or `small` etc.
