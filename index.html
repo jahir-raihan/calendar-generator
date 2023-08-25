@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/C.png" type="image/x-icon">
+    <link rel="icon" href="./images/C.png" type="image/x-icon" />
     <title>Calender</title>
 
     <link
@@ -14,21 +14,44 @@
       referrerpolicy="no-referrer"
     />
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.js"
+      integrity="sha512-Bw9Zj8x4giJb3OmlMiMaGbNrFr0ERD2f9jL3en5FmcTXLhkI+fKyXVeyGyxKMIl1RfgcCBDprJJt4JvlglEb3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body>
     <header>
       <nav>
         <div class="nav-left">
           <!-- <img src="./images/Cal.png" alt="Calender Logo" /> -->
-          <a class="site-logo-link" href="https://jahir-raihan.github.io/calendar-generator/">
+          <a
+            class="site-logo-link"
+            href="https://jahir-raihan.github.io/calendar-generator/"
+          >
             <p class="site-logo">Calendar</p>
           </a>
         </div>
         <div class="nav-right">
           <ul>
             <li>
-              <a target="_blank" href="https://github.com/jahir-raihan/calendar-generator"> <i class="fab fa-github"></i> Github </a>
+              <a
+                target="_blank"
+                href="https://github.com/jahir-raihan/calendar-generator"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
             </li>
             <!-- Founder Link -->
             <!-- <li>
@@ -51,14 +74,13 @@
       </div>
 
       <div class="download-container">
-        <button class="download">
+        <button class="download" type="button" onclick="downloadAsPDF()">
           <p class="download-txt"><i class="fa fa-download"></i> Download</p>
         </button>
       </div>
     </div>
 
-    <div class="calender-container" id="calender-container">
-    </div>
+    <div class="calender-container" id="calender-container"></div>
     <!-- JS -->
     <script src="./index.js"></script>
   </body>

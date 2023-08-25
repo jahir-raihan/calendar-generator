@@ -118,10 +118,9 @@ class Calendar {
 
       this.months_iterator();
       document.getElementById('calender-container').innerHTML = this.calendar
-  
+
+      return this.calendar;
   }
-
-
 
 }
 
@@ -139,6 +138,40 @@ function calendar_init(year=null){
 calendar_init()
 
 
+// download the calendar as a PDF using jsPDF library
+
+function downloadAsPDF() {
+    window.jsPDF = window.jspdf.jsPDF;
+
+   let calendar = document.getElementById("calender-container");
+   let calendar_months = document.querySelectorAll(".year-month-name");
+   
+
+   for (const calendar_month of calendar_months) {
+    calendar_month.style.color = "teal";
+    calendar_month.style.fontSize = "20px";
+    calendar_month.style.textAlign = "center";
+   }
+
+    // first convert the page to an image
+   html2canvas(calendar).then((canvas) => {
+        
+    // convert this canvas to a PDF
+    const dataURL = canvas.toDataURL('image/jpeg');
+
+    let doc = new jsPDF({orientation: 'p'});
+    doc.addImage(dataURL, 'JPEG', 12, 20, 180, 180);
+    doc.save('calendar.pdf');
+    });
+
+    //clear the style for the year-month-name class
+    calendar_months.forEach((cm) => {
+        cm.style.color = "white";
+        cm.style.fontSize = "13px";
+        cm.style.textAlign = "left";
+    })
+
+}
 
 // Function Based Approach
 
