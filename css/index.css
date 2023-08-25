@@ -166,12 +166,12 @@ header nav .nav-right ul li a:hover {
 }
 .month .week-days ul li:hover {
   color: white;
-  background: #2e85ff;
+  background: #343a40;
 }
 
 .active {
   color: white !important;
-  background: #2e85ff;
+  background: #343a40;
 }
 
 .empty-blocks:hover {
