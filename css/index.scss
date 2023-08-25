@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 ul {
   list-style-type: none;
 }
@@ -52,7 +51,6 @@ header {
         li {
           margin-left: 1.5em;
           color: white;
-
           a {
             color: white;
             text-decoration: none;
@@ -99,7 +97,6 @@ header {
       outline-color: #d9d9d9;
 
       opacity: 0.7;
-
       &:focus {
         outline-color: #494f55;
         opacity: 1;
@@ -149,10 +146,8 @@ header {
     font-weight: 500;
     opacity: 0.7;
     width: 100%;
-    color: teal;
-    font-size: 20px;
-    text-align: center;
-
+    color: white;
+    font-size: 13px;
   }
 
   .week-day-names {
@@ -163,7 +158,6 @@ header {
     ul {
       display: grid;
       grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
-
       li {
         text-align: center;
         color: #ffffff;
@@ -171,7 +165,6 @@ header {
       }
     }
   }
-
   .days {
     background: #eee;
     border-radius: 0 0 4px 4px;
@@ -181,7 +174,6 @@ header {
 
   .week-days {
     padding: 0.5em 1em;
-
     ul {
       display: grid;
       grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
@@ -222,14 +214,12 @@ header {
     gap: 2%;
   }
 }
-
 @media only screen and (max-width: 1000px) {
   .calender-container {
     grid-template-columns: 49% 49%;
     gap: 2%;
   }
 }
-
 @media only screen and (max-width: 650px) {
   .calender-container {
     grid-template-columns: 100%;

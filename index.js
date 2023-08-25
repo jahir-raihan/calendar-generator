@@ -35,7 +35,7 @@ class Calendar {
 
       
       // Initial variables
-      var month_template = `<div class="month"><div class="year-month-name">${this.months_list[month]} - ${this.year}</div><div class="week-day-names">
+      var month_template = `<div class="month"><p class="year-month-name">${this.months_list[month]} - ${this.year}</p><div class="week-day-names">
                             <ul><li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li></ul></div><div class="days">
       `
       let week_counter = 0;
@@ -144,7 +144,15 @@ function downloadAsPDF() {
     window.jsPDF = window.jspdf.jsPDF;
 
    let calendar = document.getElementById("calender-container");
-    
+   let calendar_months = document.querySelectorAll(".year-month-name");
+   
+
+   for (const calendar_month of calendar_months) {
+    calendar_month.style.color = "teal";
+    calendar_month.style.fontSize = "20px";
+    calendar_month.style.textAlign = "center";
+   }
+
     // first convert the page to an image
    html2canvas(calendar).then((canvas) => {
         
@@ -155,6 +163,13 @@ function downloadAsPDF() {
     doc.addImage(dataURL, 'JPEG', 12, 20, 180, 180);
     doc.save('calendar.pdf');
     });
+
+    //clear the style for the year-month-name class
+    calendar_months.forEach((cm) => {
+        cm.style.color = "white";
+        cm.style.fontSize = "13px";
+        cm.style.textAlign = "left";
+    })
 
 }
 
