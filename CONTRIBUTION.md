@@ -8,12 +8,13 @@ If you're new to contribution, Here's the guide.
 > - **Clone** you're forked Repository to your **Local machine**.
 > - **Create a new branch** according to your feature or bug/issue fix.
 > - **Push** your codes to  your **remote forked repository**.
-> - Finally open a **Pull Reqeust**, explaining your **feature**, **bug fixes** or **issues** with screenshots.
+> - Finally open a **Pull Request**, explaining your **feature**, **bug fixes** or **issues** with screenshots.
 
 
 ### Note
 
 > - <b style="color:#FF9966;">Do not edit `RAW CSS` files for styling, edit `SCSS` files instead.</b>
+> - <b style="color:#FF9966;">To compile the .scss file you need to install the sass command line: ``npm i -g sass`` and run the command ``sass css/index.scss css/index.css``.</b>
 
 > - **HTML** and **SCSS** files are formatted using prettier.
 > - Do not format the **Javascript** files, stay up to the current format using **tab** for **indentation**.
