@@ -169,6 +169,13 @@ header nav .nav-right ul li a:hover {
   background: #2e85ff;
 }
 
+.calendar-footer {
+  text-align: center;
+  size: 15px;
+  color: white;
+  margin-top: 60px;
+}
+
 .active {
   color: white !important;
   background: #2e85ff;

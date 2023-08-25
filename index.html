@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/C.png" type="image/x-icon" />
+    <title>Calender</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./images/C.png" type="image/x-icon">
-  <title>Calender</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/index.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="nav-left">
-        <!-- <img src="./images/Cal.png" alt="Calender Logo" /> -->
-        <a class="site-logo-link" href="https://jahir-raihan.github.io/calendar-generator/">
-          <p class="site-logo">Calendar</p>
-        </a>
-      </div>
-      <div class="nav-right">
-        <ul>
-          <li>
-            <a target="_blank" href="https://github.com/jahir-raihan/calendar-generator"> <i class="fab fa-github"></i>
-              Github </a>
-          </li>
-          <!-- Founder Link -->
-          <!-- <li>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <!-- <img src="./images/Cal.png" alt="Calender Logo" /> -->
+          <a
+            class="site-logo-link"
+            href="https://jahir-raihan.github.io/calendar-generator/"
+          >
+            <p class="site-logo">Calendar</p>
+          </a>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/jahir-raihan/calendar-generator"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </li>
+            <!-- Founder Link -->
+            <!-- <li>
               <a target="_blank" href="https://www.linkedin.com/in/jahir-raihan-3b0207204/"><i class="fab fa-linkedin"></i> Linkedin</a>
             </li> -->
-        </ul>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="search-selected-year-download">
+      <div class="search">
+        <input
+          class="year-box"
+          type="number"
+          placeholder="Year"
+          id="year-input"
+          onchange="calendar_init(true)"
+        />
       </div>
-    </nav>
-  </header>
 
-  <div class="search-selected-year-download">
-    <div class="search">
-      <input class="year-box" type="number" placeholder="Year" id="year-input" onchange="calendar_init(true)" />
+      <div class="download-container">
+        <button class="download">
+          <p class="download-txt"><i class="fa fa-download"></i> Download</p>
+        </button>
+      </div>
     </div>
 
-    <div class="download-container">
-      <button class="download">
-        <p class="download-txt"><i class="fa fa-download"></i> Download</p>
-      </button>
-    </div>
-  </div>
+    <div class="calender-container" id="calender-container"></div>
+    <!-- JS -->
 
-  <div class="calender-container" id="calender-container">
-  </div>
-  <!-- JS -->
-
-  <footer class="calendar-footer">
-    &copy; Copyright 2023 @Calendar Contributor Team
-  </footer>
-  <script src="./index.js"></script>
-</body>
-
+    <footer class="calendar-footer">
+      &copy; Copyright 2023 @Calendar Contributor Team
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
