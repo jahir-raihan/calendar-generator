@@ -35,7 +35,7 @@ class Calendar {
 
       
       // Initial variables
-      var month_template = `<div class="month"><p class="year-month-name">${this.months_list[month]} - ${this.year}</p><div class="week-day-names">
+      var month_template = `<div class="month"><div class="year-month-name">${this.months_list[month]} - ${this.year}</div><div class="week-day-names">
                             <ul><li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li></ul></div><div class="days">
       `
       let week_counter = 0;
@@ -118,10 +118,9 @@ class Calendar {
 
       this.months_iterator();
       document.getElementById('calender-container').innerHTML = this.calendar
-  
+
+      return this.calendar;
   }
-
-
 
 }
 
@@ -139,6 +138,25 @@ function calendar_init(year=null){
 calendar_init()
 
 
+// download the calendar as a PDF using jsPDF library
+
+function downloadAsPDF() {
+    window.jsPDF = window.jspdf.jsPDF;
+
+   let calendar = document.getElementById("calender-container");
+    
+    // first convert the page to an image
+   html2canvas(calendar).then((canvas) => {
+        
+    // convert this canvas to a PDF
+    const dataURL = canvas.toDataURL('image/jpeg');
+
+    let doc = new jsPDF({orientation: 'p'});
+    doc.addImage(dataURL, 'JPEG', 12, 20, 180, 180);
+    doc.save('calendar.pdf');
+    });
+
+}
 
 // Function Based Approach
 
