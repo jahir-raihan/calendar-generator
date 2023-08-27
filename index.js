@@ -146,6 +146,9 @@ function downloadAsPDF() {
    let calendar = document.getElementById("calender-container");
    let calendar_months = document.querySelectorAll(".year-month-name");
    
+    // remove the active background
+    let active_month = document.querySelector(".active");
+    active_month.style.background = "none";
 
    for (const calendar_month of calendar_months) {
     calendar_month.style.color = "teal";
@@ -170,6 +173,11 @@ function downloadAsPDF() {
         cm.style.fontSize = "13px";
         cm.style.textAlign = "left";
     })
+
+    // return the background color for the active class
+    active_month.style.background = "#343a40";
+
+
 
 }
 
