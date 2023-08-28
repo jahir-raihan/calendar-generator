@@ -73,7 +73,8 @@ header nav .nav-right ul li a:hover {
 }
 .search-selected-year-download .search input[type=number] {
   -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 .search-selected-year-download .search input {
   width: 70%;
@@ -146,7 +147,7 @@ header nav .nav-right ul li a:hover {
   background: #eee;
   border-radius: 0 0 4px 4px;
   padding: 10px 0;
-  height: 300px;
+  height: 320px;
 }
 .month .week-days {
   padding: 0.5em 1em;
@@ -195,6 +196,4 @@ header nav .nav-right ul li a:hover {
     grid-template-columns: 100%;
     gap: 1em;
   }
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

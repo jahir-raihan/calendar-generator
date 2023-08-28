@@ -151,9 +151,8 @@ function downloadAsPDF() {
     active_month.style.background = "none";
 
    for (const calendar_month of calendar_months) {
-    calendar_month.style.color = "teal";
+    calendar_month.style.color = "black";
     calendar_month.style.fontSize = "20px";
-    calendar_month.style.textAlign = "center";
    }
 
     // first convert the page to an image
@@ -162,7 +161,7 @@ function downloadAsPDF() {
     // convert this canvas to a PDF
     const dataURL = canvas.toDataURL('image/jpeg');
 
-    let doc = new jsPDF({orientation: 'p'});
+    let doc = new jsPDF({orientation: 'o'});
     doc.addImage(dataURL, 'JPEG', 12, 20, 180, 180);
     doc.save('calendar.pdf');
     });
@@ -176,8 +175,6 @@ function downloadAsPDF() {
 
     // return the background color for the active class
     active_month.style.background = "#343a40";
-
-
 
 }
 
