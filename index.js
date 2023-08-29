@@ -151,9 +151,9 @@ function downloadAsPDF() {
     active_month.style.background = "none";
 
    for (const calendar_month of calendar_months) {
-    calendar_month.style.color = "teal";
+    calendar_month.style.color = "#343a40";
     calendar_month.style.fontSize = "20px";
-    calendar_month.style.textAlign = "center";
+    calendar_month.style.textAlign = "left";
    }
 
     // first convert the page to an image
