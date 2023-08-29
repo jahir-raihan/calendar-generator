@@ -126,7 +126,8 @@ class Calendar {
 
 // Renderer call - Class Based
 
-function calendar_init(year=null){
+function calendar_init(year = null) {
+    document.getElementsByClassName('calender-header-year')[0].innerHTML = document.getElementById('year-input').value;
   if (year === null){
       year = new Date().getFullYear()
   } else{
