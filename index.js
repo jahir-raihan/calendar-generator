@@ -126,11 +126,13 @@ class Calendar {
 
 // Renderer call - Class Based
 
-function calendar_init(year=null){
+function calendar_init(year = null) {
+    document.getElementById("year_header").innerHTML =   Number(document.getElementById('year-input').value);
   if (year === null){
       year = new Date().getFullYear()
   } else{
       year = Number(document.getElementById('year-input').value)
+   
   }
   let calendar = new Calendar(year);
   calendar.render_calendar()
