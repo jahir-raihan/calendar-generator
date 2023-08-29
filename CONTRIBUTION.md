@@ -18,6 +18,5 @@ If you're new to contribution, Here's the guide.
 > - **HTML** and **SCSS** files are formatted using prettier.
 > - To see the changes you made in the ``.scss`` file you must **compile it**. To do this, use any SASS complier. Eg: `Watch Scss` for VS Code.
 > - Do not format the **Javascript** files, stay up to the current format using **tab** for **indentation**.
-> - Do not use **`PX`** for any property value, except custom font size. I will add global variable for font sizes.
-> - Always wrap text inside text tags Eg: `p` `text` or `small` etc.
+
 #### This Project is only for educational purpose.
