@@ -23,6 +23,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
 }
 header nav {
   width: 95%;
@@ -102,6 +103,14 @@ header nav .nav-right ul li a:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.search-selected-year-download .download:hover {
+  transform: scale(1.1);
+}
+
+.calender-header .calender-header-year {
+  text-align: center;
+  color: antiquewhite;
 }
 
 .calender-container {
