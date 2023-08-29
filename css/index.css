@@ -12,6 +12,7 @@ body {
   font-family: Verdana, sans-serif;
   background: #494f55;
   padding-bottom: 2em;
+  
 }
 
 header {
@@ -23,6 +24,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 320px;
+
 }
 header nav {
   width: 95%;
@@ -104,6 +107,18 @@ header nav .nav-right ul li a:hover {
   cursor: pointer;
 }
 
+.search-selected-year-download .download:hover
+{
+  transform: scale(1.1);
+}
+
+
+#year_header{
+  text-align: center;
+  color: antiquewhite;
+}
+
+
 .calender-container {
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
@@ -111,10 +126,12 @@ header nav .nav-right ul li a:hover {
   gap: 1.33%;
   border-radius: 4px;
   margin: 2em auto;
+
 }
 
 .month {
   min-width: 300px;
+
 }
 
 .month {
