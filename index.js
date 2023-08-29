@@ -22,6 +22,7 @@ class Calendar {
           this.calendar += this.weeks_iterator(month, current_itr_month);
       }
       
+      
   }
 
   // Iterates for a whole month by dividing days into week, and returns completed month template
@@ -127,13 +128,14 @@ class Calendar {
 // Renderer call - Class Based
 
 function calendar_init(year = null) {
-    document.getElementsByClassName('calender-header-year')[0].innerHTML = document.getElementById('year-input').value;
+
   if (year === null){
       year = new Date().getFullYear()
   } else{
       year = Number(document.getElementById('year-input').value)
   }
-  let calendar = new Calendar(year);
+    let calendar = new Calendar(year);
+    document.getElementsByClassName('calender-header-year')[0].innerHTML = year;
   calendar.render_calendar()
 }
 calendar_init()
