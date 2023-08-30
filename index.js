@@ -97,9 +97,12 @@ class Calendar {
 
                   week_template += `<li class="active"> ${day}</li>`
 
-              } else {
-                  week_template += `<li class="blocks">${day}</li>`
-              }
+                  // code for off days color
+              } else if (current_loop_date.getDay() === 0 || current_loop_date.getDay() === 6) {
+                week_template += `<li class="weekend">${day}</li>`;
+            } else {
+                week_template += `<li class="blocks">${day}</li>`;
+            }
               
               week_counter += 1
               

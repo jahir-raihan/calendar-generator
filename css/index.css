@@ -187,6 +187,16 @@ header nav .nav-right ul li a:hover {
   all: unset !important;
 }
 
+/* off day color change */
+.week-days ul li.weekend {
+  background-color: #40acfe;
+  color: #ffffff;
+}
+.week-days ul li.weekend:hover {
+  background-color: #000dff;
+  color: white;
+}
+
 @media only screen and (max-width: 1300px) {
   .calender-container {
     grid-template-columns: 32% 32% 32%;
