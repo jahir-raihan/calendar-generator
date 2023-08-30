@@ -190,14 +190,29 @@ header nav .nav-right ul li a:hover {
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
 .month .week-days ul li {
+  display:inline-block;   //changed
   color: #777;
   font-size: 13px;
   text-align: center;
-  margin-bottom: 0.5em;
-  padding: 0.3em;
-  border-radius: 4px;
+  margin-bottom: 0.5em; //changed
+  padding: 0.5em 0.5em; // changed
+  border-radius: 100%;   // changed
+  border:2px solid #eee;  //changed
   cursor: pointer;
 }
+
+.month .week-days ul li:nth-last-child(-n+2) {
+  display:inline-block;   //changed
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 0.5em; //changed
+  padding: 0.5em 0.5em; // changed
+  border-radius: 100%;   // changed
+  border:2px solid #eee;  //changed
+  cursor: pointer;
+}
+
 .month .week-days ul li:hover {
   color: white !important;
   background: #343a40;
