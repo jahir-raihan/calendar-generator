@@ -17,6 +17,21 @@
 
 }
 
+// for printing 
+@page {
+  size: 339mm 350mm;
+  height: 350mm;
+  width: 339mm;
+  margin: 0;
+  
+}
+*, body, html {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+}
+
+// end downloading
+
 ul {
   list-style-type: none;
 }

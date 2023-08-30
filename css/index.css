@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +15,17 @@
   --c-font-color-1: #777;
   --c-bg-2: #494f55;
   --c-weekend-color: #f54545dc;
+}
+
+@page {
+  size: 339mm 350mm;
+  height: 350mm;
+  width: 339mm;
+  margin: 0;
+}
+*, body, html {
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+  print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
 }
 
 ul {
