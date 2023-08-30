@@ -190,26 +190,12 @@ header nav .nav-right ul li a:hover {
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
 .month .week-days ul li {
-  display:inline-block;   //changed
+  display:inline-block;
   color: #777;
   font-size: 13px;
   text-align: center;
-  margin-bottom: 0.5em; //changed
-  padding: 0.5em 0.5em; // changed
-  border-radius: 100%;   // changed
-  border:2px solid #eee;  //changed
-  cursor: pointer;
-}
-
-.month .week-days ul li:nth-last-child(-n+2) {
-  display:inline-block;   //changed
-  color: #777;
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: 0.5em; //changed
-  padding: 0.5em 0.5em; // changed
-  border-radius: 100%;   // changed
-  border:2px solid #eee;  //changed
+  padding: 1em 0.3em;
+  border-radius: 100%; /* Used 100% to make it circular */
   cursor: pointer;
 }
 
@@ -219,7 +205,7 @@ header nav .nav-right ul li a:hover {
 }
 
 .weekend-color {
-  color: var(--c-weekday-color) !important;
+  color: var(--c-weekend-color) !important;
 }
 
 .weekend-current-date, .weekend-color:hover {
