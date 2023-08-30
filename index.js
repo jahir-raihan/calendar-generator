@@ -176,6 +176,7 @@ function calendar_init(year = null) {
     }
     let calendar = new Calendar(year);
     document.getElementsByClassName('calender-header-year')[0].innerHTML = year;
+    document.getElementById('title').innerHTML = `Calendar - ${year}`
     calendar.render_calendar();
 }
 calendar_init()
