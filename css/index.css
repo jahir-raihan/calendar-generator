@@ -34,7 +34,7 @@ ul {
 
 body {
   font-family: Verdana, sans-serif;
-  background: #494f55;
+  background: var(--c-bg-2);
   padding-bottom: 2em;
 }
 
@@ -63,7 +63,7 @@ header nav .site-logo-link {
 header nav .site-logo {
   font-size: 24px;
   font-weight: 500;
-  color: white;
+  color: var(--c-white);
 }
 header nav .nav-right ul {
   list-style: none;
@@ -71,10 +71,10 @@ header nav .nav-right ul {
 }
 header nav .nav-right ul li {
   margin-left: 1.5em;
-  color: white;
+  color: var(--c-white);
 }
 header nav .nav-right ul li a {
-  color: white;
+  color: var(--c-white);
   text-decoration: none;
 }
 header nav .nav-right ul li a:hover {
@@ -106,12 +106,12 @@ header nav .nav-right ul li a:hover {
   height: 35px;
   border-radius: 4px;
   padding-left: 1em;
-  border: 0.5px solid #d9d9d9;
-  outline-color: #d9d9d9;
+  border: 0.5px solid var(--c-input-border-outline);
+  outline-color: var(--c-input-border-outline);
   opacity: 0.7;
 }
 .search-selected-year-download .search input:focus {
-  outline-color: #494f55;
+  outline-color: var(--c-input-focus);
   opacity: 1;
 }
 .search-selected-year-download .selected-year {
@@ -135,7 +135,7 @@ header nav .nav-right ul li a:hover {
 
 .calender-header .calender-header-year {
   text-align: center;
-  color: antiquewhite;
+  color: var(--c-header);
 }
 
 .calender-container {
@@ -159,11 +159,11 @@ header nav .nav-right ul li a:hover {
   font-weight: 500;
   opacity: 0.7;
   width: 100%;
-  color: white;
+  color: var(--c-white);
   font-size: 13px;
 }
 .month .week-day-names {
-  background: #343a40;
+  background: var(--c-black);
   padding: 1em;
   border-radius: 4px 4px 0 0;
 }
@@ -177,7 +177,7 @@ header nav .nav-right ul li a:hover {
   font-size: 14px;
 }
 .month .days {
-  background: #eee;
+  background: var(--c-bg-1);
   border-radius: 0 0 4px 4px;
   padding: 10px 0;
   height: 300px;
@@ -190,7 +190,7 @@ header nav .nav-right ul li a:hover {
   grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 }
 .month .week-days ul li {
-  color: #777;
+  color: var(--c-font-color-1);
   font-size: 13px;
   text-align: center;
   margin-bottom: 0.5em;
@@ -199,8 +199,8 @@ header nav .nav-right ul li a:hover {
   cursor: pointer;
 }
 .month .week-days ul li:hover {
-  color: white !important;
-  background: #343a40;
+  color: var(--c-white) !important;
+  background: var(--c-black);
 }
 
 .weekend-color {
@@ -216,8 +216,8 @@ header nav .nav-right ul li a:hover {
   color: var(--c-weekend-color) !important;
 }
 .active {
-  color: white !important;
-  background: #343a40;
+  color: var(--c-white) !important;
+  background: var(--c-black);
 }
 
 .empty-blocks {

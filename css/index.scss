@@ -38,7 +38,7 @@ ul {
 
 body {
   font-family: Verdana, sans-serif;
-  background: #494f55;
+  background: var(--c-bg-2);
   padding-bottom: 2em;
 }
 
@@ -71,7 +71,7 @@ header {
     .site-logo {
       font-size: 24px;
       font-weight: 500;
-      color: white;
+      color: var(--c-white);
     }
 
     .nav-right {
@@ -81,9 +81,9 @@ header {
 
         li {
           margin-left: 1.5em;
-          color: white;
+          color: var(--c-white);
           a {
-            color: white;
+            color: var(--c-white);
             text-decoration: none;
 
             &:hover {
@@ -124,12 +124,12 @@ header {
       height: 35px;
       border-radius: 4px;
       padding-left: 1em;
-      border: 0.5px solid #d9d9d9;
-      outline-color: #d9d9d9;
+      border: 0.5px solid var(--c-input-border-outline);
+      outline-color: var(--c-input-border-outline);
 
       opacity: 0.7;
       &:focus {
-        outline-color: #494f55;
+        outline-color: var(--c-input-focus);
         opacity: 1;
       }
     }
@@ -165,7 +165,7 @@ header {
 
   .calender-header-year{
   text-align: center;
-  color: antiquewhite;}
+  color: var(--c-header);}
 }
 
 // Calender container
@@ -196,12 +196,12 @@ header {
     font-weight: 500;
     opacity: 0.7;
     width: 100%;
-    color: white;
+    color: var(--c-white);
     font-size: 13px;
   }
 
   .week-day-names {
-    background: #343a40;
+    background: var(--c-black);
     padding: 1em;
     border-radius: 4px 4px 0 0;
 
@@ -216,7 +216,7 @@ header {
     }
   }
   .days {
-    background: #eee;
+    background: var(--c-bg-1);
     border-radius: 0 0 4px 4px;
     padding: 10px 0;
     height: 300px;
@@ -229,7 +229,7 @@ header {
       grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
 
       li {
-        color: #777;
+        color: var(--c-font-color-1);
         font-size: 13px;
         text-align: center;
         margin-bottom: 0.5em;
@@ -239,8 +239,8 @@ header {
         cursor: pointer;
 
         &:hover {
-          color: white !important;
-          background: #343a40 ;
+          color: var(--c-white) !important;
+          background: var(--c-black) ;
         }
       }
     }
@@ -264,8 +264,8 @@ header {
 }
 
 .active {
-  color: white !important;
-  background: #343a40;
+  color: var(--c-white) !important;
+  background: var(--c-black);
 }
 
 .empty-blocks {
