@@ -3,6 +3,20 @@
   margin: 0;
   padding: 0;
 }
+
+:root{
+  --c-black : #343a40;
+  --c-white : white;
+  --c-input-border-outline : #d9d9d9;
+  --c-input-focus : #494f55;
+  --c-header : antiquewhite;
+  --c-bg-1 : #eee;
+  --c-font-color-1 : #777;
+  --c-bg-2 : #494f55;
+  --c-weekend-color : #f54545dc;
+
+}
+
 ul {
   list-style-type: none;
 }
@@ -210,11 +224,27 @@ header {
         cursor: pointer;
 
         &:hover {
-          color: white;
-          background: #343a40;
+          color: white !important;
+          background: #343a40 ;
         }
       }
     }
+  }
+}
+
+.weekend-color{
+  color:var(--c-weekday-color) !important;
+}
+
+.weekend-current-date{
+  background:var(--c-weekend-color) !important;
+  color:var(--c-white);
+
+}
+.weekend-color{
+  color: var(--c-weekend-color) !important;
+  &:hover{
+    @extend .weekend-current-date;
   }
 }
 
