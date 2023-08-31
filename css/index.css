@@ -1,7 +1,33 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --c-black: #343a40;
+  --c-white: white;
+  --c-input-border-outline: #d9d9d9;
+  --c-input-focus: #494f55;
+  --c-header: antiquewhite;
+  --c-bg-1: #eee;
+  --c-font-color-1: #777;
+  --c-bg-2: #494f55;
+  --c-weekend-color: #f54545dc;
+}
+
+@page {
+  size: 339mm 350mm;
+  height: 350mm;
+  width: 339mm;
+  margin: 0;
+}
+*,
+body,
+html {
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+  print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
 }
 
 ul {
@@ -23,6 +49,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 300px;
 }
 header nav {
   width: 95%;
@@ -96,12 +123,22 @@ header nav .nav-right ul li a:hover {
   font-size: 22px;
 }
 .search-selected-year-download .download {
+  display: inline-block;
   width: 120px;
   padding: 0.5em 1em;
   height: 35px;
   font-size: 15px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+.search-selected-year-download .download:hover {
+  transform: scale(1.1);
+}
+
+.calender-header .calender-header-year {
+  text-align: center;
+  color: antiquewhite;
 }
 
 .calender-container {
@@ -165,10 +202,22 @@ header nav .nav-right ul li a:hover {
   cursor: pointer;
 }
 .month .week-days ul li:hover {
-  color: white;
-  background: #2e85ff;
+  color: white !important;
+  background: #343a40;
 }
 
+.weekend-color {
+  color: var(--c-weekday-color) !important;
+}
+
+.weekend-current-date, .weekend-color:hover {
+  background: var(--c-weekend-color) !important;
+  color: var(--c-white);
+}
+
+.weekend-color {
+  color: var(--c-weekend-color) !important;
+}
 .calendar-footer {
   text-align: center;
   size: 15px;
@@ -178,10 +227,27 @@ header nav .nav-right ul li a:hover {
 
 .active {
   color: white !important;
-  background: #2e85ff;
+  background: #343a40;
 }
 
-.empty-blocks:hover {
+.weekend-color {
+  color: var(--c-weekday-color) !important;
+}
+
+.weekend-current-date, .weekend-color:hover {
+  background: var(--c-weekend-color) !important;
+  color: var(--c-white);
+}
+
+.weekend-color {
+  color: var(--c-weekend-color) !important;
+}
+.active {
+  color: white !important;
+  background: #343a40;
+}
+
+.empty-blocks {
   all: unset !important;
 }
 
@@ -201,5 +267,11 @@ header nav .nav-right ul li a:hover {
   .calender-container {
     grid-template-columns: 100%;
     gap: 1em;
+  }
+  .download-container {
+    text-align: center; /* Center the button */
+  }
+  .download {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=index.css.map */

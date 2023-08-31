@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/C.png" type="image/x-icon" />
-    <title>Calender</title>
+    <title id="title">Calender</title>
 
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <nav>
         <div class="nav-left">
           <!-- <img src="./images/Cal.png" alt="Calender Logo" /> -->
@@ -48,7 +48,7 @@
       </nav>
     </header>
 
-    <div class="search-selected-year-download">
+    <div class="search-selected-year-download" id="search-selected-year-download">
       <div class="search">
         <input
           class="year-box"
@@ -60,12 +60,15 @@
       </div>
 
       <div class="download-container">
-        <button class="download">
+        <button class="download" type="button" id="download-button" onclick="download_calendar()">
           <p class="download-txt"><i class="fa fa-download"></i> Download</p>
         </button>
       </div>
     </div>
 
+    <div class="calender-header" id="calender-header">
+      <h1 class="calender-header-year"></h1>
+    </div>
     <div class="calender-container" id="calender-container"></div>
     <!-- JS -->
 
