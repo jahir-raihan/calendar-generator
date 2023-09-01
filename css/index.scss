@@ -19,9 +19,9 @@
 
 // for printing 
 @page {
-  size: 339mm 350mm;
-  height: 350mm;
-  width: 339mm;
+  size: 359mm 370mm;
+  height: 370mm;
+  width: 359mm;
   margin: 0;
   
 }
@@ -228,11 +228,11 @@ header {
     background: var(--c-bg-1);
     border-radius: 0 0 4px 4px;
     padding: 10px 0;
-    height: 300px;
+    height: 335px;
   }
 
   .week-days {
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     ul {
       display: grid;
       grid-template-columns: 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857% 14.2857142857%;
@@ -243,42 +243,52 @@ header {
         text-align: center;
         margin-bottom: 0.5em;
         padding: 0.3em;
-        border-radius: 4px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        p{
+          width: 30px;
+          height:30px;
+          border-radius: 50%;
+          color: var(--c-font-color-1);
+          font-size: 13px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
 
-        cursor: pointer;
+          &:hover {
 
-        &:hover {
-
-          color: var(--c-white) !important;
-          background: var(--c-black) ;
-
-          color: var(--c-white) !important;
-
-          background: var(--c-black);
-
+            color: var(--c-white) !important;
+            background: var(--c-black) ;
+            color: var(--c-white) !important;
+            
+          }
         }
       }
     }
   }
 }
 
-.weekend-color{
+.weekend-color p{
   color:var(--c-weekday-color) !important;
 }
 
-.weekend-current-date{
+.weekend-current-date p{
   background:var(--c-weekend-color) !important;
-  color:var(--c-white);
+  color:var(--c-white) !important;
 
 }
-.weekend-color{
+.weekend-color p{
   color: var(--c-weekend-color) !important;
   &:hover{
-    @extend .weekend-current-date;
+    background:var(--c-weekend-color) !important;
+    color:var(--c-white) !important;
   }
 }
 
-.active {
+.active p{
   color: var(--c-white) !important;
   background: var(--c-black);
 }
