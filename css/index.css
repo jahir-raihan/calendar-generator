@@ -23,7 +23,9 @@
   width: 339mm;
   margin: 0;
 }
-*, body, html {
+*,
+body,
+html {
   -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
   print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
 }
@@ -121,6 +123,7 @@ header nav .nav-right ul li a:hover {
   font-size: 22px;
 }
 .search-selected-year-download .download {
+  display: inline-block;
   width: 120px;
   padding: 0.5em 1em;
   height: 35px;
@@ -136,6 +139,11 @@ header nav .nav-right ul li a:hover {
 .calender-header .calender-header-year {
   text-align: center;
   color: var(--c-header);
+}
+
+.calender-header .calender-header-year {
+  text-align: center;
+  color: antiquewhite;
 }
 
 .calender-container {
@@ -201,6 +209,8 @@ header nav .nav-right ul li a:hover {
 .month .week-days ul li:hover {
   color: var(--c-white) !important;
   background: var(--c-black);
+  color: white !important;
+  background: #343a40;
 }
 
 .weekend-color {
@@ -240,5 +250,11 @@ header nav .nav-right ul li a:hover {
   .calender-container {
     grid-template-columns: 100%;
     gap: 1em;
+  }
+  .download-container {
+    text-align: center; /* Center the button */
+  }
+  .download {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=index.css.map */

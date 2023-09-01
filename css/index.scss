@@ -45,7 +45,7 @@ body {
 // header - navigation
 
 header {
-  background: #343a40 !important;
+  background: var(--c-black) !important;
   position: sticky;
   top: 0;
   height: 80px;
@@ -252,7 +252,7 @@ header {
           color: var(--c-white) !important;
           background: var(--c-black) ;
 
-          color: white !important;
+          color: var(--c-white) !important;
 
           background: var(--c-black);
 
