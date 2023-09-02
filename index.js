@@ -191,7 +191,10 @@ function download_calendar() {
     document.getElementById('calender-header').style.marginTop = '1.5em'
     let current_year = document.getElementsByClassName('calender-header-year')[0].innerHTML
     document.getElementsByClassName('calender-header-year')[0].innerHTML = `Calendar - ${current_year}`
-    document.getElementById('active').classList.remove('active')
+    try{
+        document.getElementById('active').classList.remove('active')
+    }catch{}
+    
     document.getElementById('active').classList.remove('weekend-current-date')
     document.getElementById('calender-container').style.marginTop = '1.5em'
     
