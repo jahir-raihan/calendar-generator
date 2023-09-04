@@ -120,11 +120,11 @@ class Calendar {
                 
                     if (this.verfiy_weekend(week_counter, this.time_zone)){
 
-                        week_template += `<li class="weekend-current-date" id='active'> ${day}</li>`;
+                        week_template += `<li class="weekend-current-date " id='active'><p>${day}</p></li>`;
 
                     } else {
 
-                        week_template += `<li class="active" id='active'> ${day}</li>`;
+                        week_template += `<li class="active" id='active'><p>${day}</p></li>`;
 
                     }
                     
@@ -132,11 +132,11 @@ class Calendar {
                 } else {
                     if (this.verfiy_weekend(week_counter, this.time_zone)){
 
-                        week_template += `<li class="blocks weekend-color"> ${day}</li>`;
+                        week_template += `<li class="blocks weekend-color"><p>${day}</p></li>`;
                 
                     } else {
 
-                        week_template += `<li class="blocks">${day}</li>`;
+                        week_template += `<li class="blocks"><p>${day}</p></li>`;
                     }
                     
                 }
@@ -188,10 +188,15 @@ function download_calendar() {
     
     document.getElementById('header').style.display = 'none'
     document.getElementById('search-selected-year-download').style.display = 'none'
-    document.getElementById('calender-header').style.marginTop = '2em'
+    document.getElementById('calender-header').style.marginTop = '1.5em'
     let current_year = document.getElementsByClassName('calender-header-year')[0].innerHTML
     document.getElementsByClassName('calender-header-year')[0].innerHTML = `Calendar - ${current_year}`
-    document.getElementById('active').classList.remove('active')
+    try{
+        document.getElementById('active').classList.remove('active')
+        document.getElementById('active').classList.remove('weekend-current-date')
+    }catch{}
+    
+    document.getElementById('calender-container').style.marginTop = '1.5em'
     
     window.print();
 
