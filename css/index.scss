@@ -288,34 +288,6 @@ header {
   }
 }
 
-//  Calendar Footer
-
-.calendar-footer {
-  text-align: center;
-  size: 15px;
-  color: white;
-  margin-top: 60px;
-}
-
-.active {
-  color: white !important;
-  background: #343a40;
-  }
-.weekend-color {
-  color: var(--c-weekday-color) !important;
-}
-
-.weekend-current-date {
-  background: var(--c-weekend-color) !important;
-  color: var(--c-white);
-}
-.weekend-color {
-  color: var(--c-weekend-color) !important;
-  &:hover {
-    @extend .weekend-current-date;
-  }
-}
-
 .active p{
   color: var(--c-white) !important;
   background: var(--c-black);
@@ -323,6 +295,13 @@ header {
 
 .empty-blocks {
   all: unset !important;
+}
+
+.calendar-footer {
+  text-align: center;
+  size: 15px;
+  color: white;
+  margin-top: 60px;
 }
 
 // media queries
@@ -351,6 +330,6 @@ header {
     gap: 1em;
   }
   .calendar-footer {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }

@@ -225,7 +225,7 @@ header nav .nav-right ul li a:hover {
   color: var(--c-weekday-color) !important;
 }
 
-.weekend-current-date p, .weekend-color:hover p {
+.weekend-current-date p {
   background: var(--c-weekend-color) !important;
   color: var(--c-white) !important;
 }
@@ -238,30 +238,6 @@ header nav .nav-right ul li a:hover {
   color: var(--c-white) !important;
 }
 
-.calendar-footer {
-  text-align: center;
-  size: 15px;
-  color: white;
-  margin-top: 60px;
-}
-
-.active {
-  color: white !important;
-  background: #343a40;
-}
-
-.weekend-color {
-  color: var(--c-weekday-color) !important;
-}
-
-.weekend-current-date, .weekend-color:hover {
-  background: var(--c-weekend-color) !important;
-  color: var(--c-white);
-}
-
-.weekend-color {
-  color: var(--c-weekend-color) !important;
-}
 .active p {
   color: var(--c-white) !important;
   background: var(--c-black);
@@ -269,6 +245,13 @@ header nav .nav-right ul li a:hover {
 
 .empty-blocks {
   all: unset !important;
+}
+
+.calendar-footer {
+  text-align: center;
+  size: 15px;
+  color: white;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -295,6 +278,6 @@ header nav .nav-right ul li a:hover {
     gap: 1em;
   }
   .calendar-footer {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=index.css.map */
