@@ -3,7 +3,7 @@
 function verfiy_weekend(date, time_zone){   
     if (time_zone === 'Asia/Dhaka' && (date === 4 || date === 5)) {
         return true
-    } else if (time_zone === "America/New_York" && (date === 4 || date === 5)){
+    } else if (time_zone === "America/New_York" && (date === 5 || date === 6)){
         return true
     }
 
@@ -30,7 +30,7 @@ class Calendar {
 
         if (time_zone === 'Asia/Dhaka' && (date === 4 || date === 5)) {
             return true
-        } else if (time_zone === "America/New_York" && (date === 4 || date === 5)){
+        } else if (time_zone === "America/New_York" && ( date === 5 || date === 6)){
             return true
         }
      
