@@ -183,8 +183,6 @@ function calendar_init(year = null) {
     document.getElementById('title').innerHTML = `Calendar - ${year}`
     calendar.render_calendar();
 }
-calendar_init()
-
 
 // download the calendar as a PDF using jsPDF library
 
@@ -195,6 +193,7 @@ function download_calendar() {
     document.getElementById('calender-header').style.marginTop = '1.5em'
     let current_year = document.getElementsByClassName('calender-header-year')[0].innerHTML
     document.getElementsByClassName('calender-header-year')[0].innerHTML = `Calendar - ${current_year}`
+    document.querySelector(".calendar-footer").style.display = 'none'
     try{
         document.getElementById('active').classList.remove('active')
         document.getElementById('active').classList.remove('weekend-current-date')
@@ -209,3 +208,17 @@ function download_calendar() {
 
 }
 
+function generateFooterContent() {
+    const footer = document.querySelector(".calendar-footer");
+    const text = `&copy; Copyright ${new Date().getFullYear()} @Calendar Contributor Team`;
+
+    footer.textContent = text;
+}
+
+function sideEffectsOnPageLoad() {
+    calendar_init();
+    generateFooterContent();
+}
+
+
+document.addEventListener('DOMContentLoaded', sideEffectsOnPageLoad);
