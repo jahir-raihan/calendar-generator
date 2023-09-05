@@ -1,7 +1,9 @@
 //  Weekend validator.
 
-function verfiy_weekend(date, time_zone){
+function verfiy_weekend(date, time_zone){   
     if (time_zone === 'Asia/Dhaka' && (date === 4 || date === 5)) {
+        return true
+    } else if (time_zone === "America/New_York" && (date === 4 || date === 5)){
         return true
     }
 
@@ -28,8 +30,10 @@ class Calendar {
 
         if (time_zone === 'Asia/Dhaka' && (date === 4 || date === 5)) {
             return true
+        } else if (time_zone === "America/New_York" && (date === 4 || date === 5)){
+            return true
         }
-
+     
     }
 
 
@@ -204,3 +208,4 @@ function download_calendar() {
     
 
 }
+
