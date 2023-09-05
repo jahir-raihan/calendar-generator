@@ -247,10 +247,20 @@ header nav .nav-right ul li a:hover {
   all: unset !important;
 }
 
+.calendar-footer {
+  text-align: center;
+  size: 15px;
+  color: white;
+  margin-top: 60px;
+}
+
 @media only screen and (max-width: 1300px) {
   .calender-container {
     grid-template-columns: 32% 32% 32%;
     gap: 2%;
+  }
+  .calendar-footer {
+    margin-top: 150px;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -258,10 +268,16 @@ header nav .nav-right ul li a:hover {
     grid-template-columns: 49% 49%;
     gap: 2%;
   }
+  .calendar-footer {
+    margin-top: 300px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .calender-container {
     grid-template-columns: 100%;
     gap: 1em;
+  }
+  .calendar-footer {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=index.css.map */
