@@ -208,6 +208,8 @@ function download_calendar() {
 
 }
 
+// Generate footer content dynamically
+
 function generateFooterContent() {
     const footer = document.querySelector(".calendar-footer");
     const text = `&copy; Copyright ${new Date().getFullYear()} @Calendar Contributor Team`;
@@ -215,10 +217,13 @@ function generateFooterContent() {
     footer.textContent = text;
 }
 
+// Call side effects functions in one place
+
 function sideEffectsOnPageLoad() {
     calendar_init();
     generateFooterContent();
 }
 
+// Add sideEffectsOnPageLoad function on DOMContentLoaded event
 
 document.addEventListener('DOMContentLoaded', sideEffectsOnPageLoad);
