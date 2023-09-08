@@ -214,7 +214,7 @@ function generateFooterContent() {
     const footer = document.querySelector(".calendar-footer");
     const text = `&copy; Copyright ${new Date().getFullYear()} @Calendar Contributor Team`;
 
-    footer.textContent = text;
+    footer.innerHTML = text;
 }
 
 // Call side effects functions in one place
