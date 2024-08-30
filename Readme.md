@@ -1,4 +1,4 @@
-!# Simple calendar generator website. 
+# Simple calendar generator website. 
 
 > - **Generates calendar for a given year**
 > - **Provides functionality to download a PDF version of the calendar**
